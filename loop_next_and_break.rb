@@ -1,5 +1,5 @@
 # # ruby 2.3.0
-# # About next
+# # About next and break
 
 # # run the loop and next if the condition is true without run the remaining load in the loop
 next_arr = []
@@ -18,7 +18,6 @@ loop do
 	break if i <= 0
 end
 print "break result: #{break_arr}"
-
 
 # # used both next and break in this loop 
 num = 20

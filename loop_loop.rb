@@ -1,5 +1,5 @@
 # # ruby 2.3.0
-# # About looping
+# # About looping with loop
 
 # # run the loop and break if the condition is true
 i = 20
