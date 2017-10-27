@@ -1,13 +1,9 @@
-array = Array.new
-for i in 1..100
-	if (i % 2) == 0 && (i % 5) == 0
-	  array<<"both"
-	elsif i % 2 == 0
-		array<<"even"
-	elsif i % 3 == 0
-		array<<"odd"
-	else
-		array<< i
-	end
-end
-print array
+puts "Text please: "
+text = gets.chomp
+
+words = text.split(" ")
+frequencies = Hash.new(0)
+words.each { |word| frequencies[word] += 1 }
+frequencies = frequencies.sort_by {|a, b| b }
+frequencies.reverse!
+frequencies.each { |word, frequency| puts word + " " + frequency.to_s }
