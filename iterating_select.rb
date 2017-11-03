@@ -1,5 +1,5 @@
 # # ruby 2.3.0
-# # About "filtering any object"
+# # About "filtering any object by iterating using select"
 
 movie_ratings = {
   memento: 3,
