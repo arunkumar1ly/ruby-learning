@@ -1,5 +1,5 @@
 # # ruby 2.3.0
-# # About "the difference between blocks, procs and lambda"
+# # About "procs"
 
 # # PROC Example 1
 multiples_of_3 = Proc.new do |n|
