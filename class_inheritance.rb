@@ -20,3 +20,25 @@ end
 # # calling class
 Puppy.new.bark
 Puppy.running
+
+# # ====================================
+# # over writing the parent class method 
+class Fish < Dog
+  def bark
+  	puts "it won't bark"
+  end
+end
+# # It return's "it won't bark", because we overwritten the inherited bark method.
+Fish.new.bark
+
+# # ============
+# # usinng super 
+
+class Rabbit < Dog
+	def bark
+		puts "This way we can call the super class's method"
+		super
+	end
+end
+
+Rabbit.new.bark
