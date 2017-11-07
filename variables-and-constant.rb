@@ -39,3 +39,7 @@ puts "Files: #{Computer.display_files}"
 
 puts "Constant value: #{Computer.display_constant}"
 # PI constant is belongs to the Computer class. But constants are mostly used in modules 
+
+# we can get the constant variable or class method like this also 
+puts Computer::PI
+puts Computer::display_constant
