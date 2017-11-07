@@ -40,3 +40,4 @@ Puppy.new.shout
 Puppy.sit
 # # this will throw error, because include will create only instance method
 Puppy.shout
+

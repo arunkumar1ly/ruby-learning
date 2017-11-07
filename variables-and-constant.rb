@@ -2,11 +2,13 @@
 # # About Variables and its Scope
 
 class Computer
-  $manufacturer = "Mango Computer, Inc."
-  @@files = {hello: "Hello, world!"}
-  
+
+  $manufacturer = "Mango Computer, Inc." # global variable
+  @@files = {hello: "Hello, world!"} # class variable
+  PI = 3.141592653589793 # constant variable 
+
   def initialize(username, password)
-    @username = username
+    @username = username # instance variabble 
     @password = password
   end
   
@@ -16,6 +18,10 @@ class Computer
   
   def self.display_files
     @@files
+  end
+
+  def self.display_constant
+    PI
   end
 end
 
@@ -30,3 +36,6 @@ puts "Manufacturer: #{$manufacturer}"
 
 puts "Files: #{Computer.display_files}"
 # @@files belongs to the Computer class.
+
+puts "Constant value: #{Computer.display_constant}"
+# PI constant is belongs to the Computer class. But constants are mostly used in modules 
