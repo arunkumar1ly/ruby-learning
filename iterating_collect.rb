@@ -22,7 +22,7 @@ fibs.collect! do |v|
   v + v
 end
 
-# # This will return [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]. This is because, "!" in Ruby means, "this method could do something dangerous or unexpected!" In this case, it mutates the original array instead of creating a new one.
+# # This will return fibs = [2, 2, 4, 6, 10, 16, 26, 42, 68, 110]. This is because, "!" in Ruby means, "this method could do something dangerous or unexpected!" In this case, it mutates the original array instead of creating a new one.
 print "fibs = #{fibs}"
 
 # # Note: we can't use "!" in each or select iterating methods.
