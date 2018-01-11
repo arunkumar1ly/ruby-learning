@@ -1,11 +1,11 @@
 # # ruby 2.3.0
 # # About Variables and its Scope
 
+$manufacturer = "Mango Computer, Inc." # global variable
+INR = 100 # is act as a global constant, because it assigned outside the class
 class Computer
-
-  $manufacturer = "Mango Computer, Inc." # global variable
   @@files = {hello: "Hello, world!"} # class variable
-  PI = 3.141592653589793 # constant variable 
+  PI = 3.141592653589793 # is act as a class constant, because it assigned inside the class
 
   def initialize(username, password)
     @username = username # instance variabble 
@@ -27,17 +27,19 @@ end
 
 # Make a new Computer instance:
 hal = Computer.new("Dave", 12345)
-
-puts "Current user: #{hal.current_user}"
+puts "Instance Variable: #{hal.current_user}"
 # @username belongs to the hal instance.
 
-puts "Manufacturer: #{$manufacturer}"
+puts "Global Variable: #{$manufacturer}"
 # $manufacturer is global! We can get it directly.
 
-puts "Files: #{Computer.display_files}"
+puts "Global Constant: #{INR}"
+# $manufacturer is global! We can get it directly.
+
+puts "Class Variable: #{Computer.display_files}"
 # @@files belongs to the Computer class.
 
-puts "Constant value: #{Computer.display_constant}"
+puts "Class Constant: #{Computer.display_constant}"
 # PI constant is belongs to the Computer class. But constants are mostly used in modules 
 
 # we can get the constant variable or class method like this also 
