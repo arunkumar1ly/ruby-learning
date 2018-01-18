@@ -7,6 +7,7 @@ class Dog
 		puts 'Class Method: ...... '
 	end
 
+	# # instance method 
 	def bark
 		puts "woof"
 	end
@@ -41,4 +42,5 @@ class Rabbit < Dog
 	end
 end
 
+# # It return's "woof", because we overwritten and again we called super method - that will overwritten again "woof".
 Rabbit.new.bark

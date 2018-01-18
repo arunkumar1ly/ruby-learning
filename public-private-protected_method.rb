@@ -1,7 +1,10 @@
 # # ruby 2.3.0
 # # About "the difference between private, public, and protected methods"
 
-# Public methods can be called by everyone - no access control is enforced. A class's instance methods (these do not belong only to one object; instead, every instance of the class can call them) are public by default; anyone can call them. The initialize method is always private.
+# Public methods can be called by everyone - no access control is enforced. 
+# A class's instance methods (these do not belong only to one object; instead, 
+# every instance of the class can call them) are public by default; anyone can call them. 
+# The initialize method is always private.
 # ---
 # Protected methods can be invoked only by objects of the defining class and its subclasses. Access is kept within the family. However, usage of protected is limited.
 # ---
